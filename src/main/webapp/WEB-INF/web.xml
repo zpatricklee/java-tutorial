@@ -8,7 +8,7 @@
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
-  </welcome-file-list> -->
+  </welcome-file-list> 
   
   <servlet>
 		<servlet-name>abc</servlet-name>
@@ -26,5 +26,29 @@
 	<servlet-mapping>
 		<servlet-name>pqr</servlet-name>
 		<url-pattern>/square</url-pattern>
+	</servlet-mapping> -->
+	
+	<servlet>
+		<servlet-name>abc</servlet-name>
+		<servlet-class>com.plee.MyServlet</servlet-class>
+		
+		<init-param>
+			<param-name>name</param-name>
+			<param-value>Angie</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>abc</servlet-name>
+		<url-pattern>/home</url-pattern>
 	</servlet-mapping>
+	
+	<context-param>
+		<param-name>name</param-name>
+		<param-value>Patrick</param-value>
+	</context-param>
+	
+	<context-param>
+		<param-name>phone</param-name>
+		<param-value>Samsung</param-value>
+	</context-param>
 </web-app>
