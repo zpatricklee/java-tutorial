@@ -1,4 +1,5 @@
 # Ignore compiled class files
 /build/classes/
 
-
+# Ignore .classpath
+.classpath
