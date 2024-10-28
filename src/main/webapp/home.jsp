@@ -1,7 +1,7 @@
 <%-- JSP Directive (for package imports, external tags) --%>
 <%@page import="java.util.Scanner"%>
 <%@page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" errorPage="error.jsp"%>
 <%@include file="header.jsp"%>
 <!DOCTYPE html>
 <html>
@@ -13,7 +13,6 @@
 	<%-- JSP Declaration (goes OUTSIDE service() method) --%>
 	<%! 
 		int coef = 3;
-		
 	%>
 	
 	<h1>Hello world!</h1>
@@ -27,10 +26,15 @@
 	
 	<%-- JSP Expression tag (for output --> becomes out.print()) --%>
 	My fav number is : <%= coef %>
+	<br>
 	
 	<% 
 		pageContext.setAttribute("name", "Patrick", PageContext.SESSION_SCOPE);
 	%>
+	
+	<%--
+		int k = 9 / 0;
+	--%>
 </body>
 </html>
 
