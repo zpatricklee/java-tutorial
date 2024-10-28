@@ -10,3 +10,14 @@
 	<%= 7+8 %>
 </body>
 </html>
+
+<%-- 
+	Builtin Object (can be used in Scriptlet and Expression
+	Request (HttpServletRequest)
+	Response (HttpServletResponse)
+	PageContext (PageContext)
+	Out (JspWriter) ~ PrintWriter object
+	Session (HttpSession)
+	Application (ServletContext)
+	Config (ServletConfig)
+-->

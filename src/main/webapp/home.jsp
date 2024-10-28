@@ -27,5 +27,20 @@
 	
 	<%-- JSP Expression tag (for output --> becomes out.print()) --%>
 	My fav number is : <%= coef %>
+	
+	<% 
+		pageContext.setAttribute("name", "Patrick", PageContext.SESSION_SCOPE);
+	%>
 </body>
 </html>
+
+<%-- 
+	Built-in Object (can be used in Scriptlet and Expression
+	Request (HttpServletRequest)
+	Response (HttpServletResponse)
+	PageContext (PageContext)
+	Out (JspWriter) ~ PrintWriter object
+	Session (HttpSession)
+	Application (ServletContext)
+	Config (ServletConfig)
+--%>
